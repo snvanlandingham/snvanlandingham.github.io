@@ -1,13 +1,15 @@
-/* Main StyleSheet */
-
-/* Global */
-
-body{
-  background: aquamarine;
+h1{ 
+text-align: center;
 }
 
-img 
+img{
+ display: block;
+ margin: 0 auto;
+ height: auto; 
+}
 
-/* Typography */
-/* Homepage  */
-/* Resume */
+body{
+  font-size: 50px;
+  background: pink;
+  
+}
