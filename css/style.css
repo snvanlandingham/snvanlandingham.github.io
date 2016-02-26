@@ -1,5 +1,9 @@
+@import url(https://fonts.googleapis.com/css?family=Poiret+One);
+
 h1{ 
 text-align: center;
+font-family: 'Poiret One', cursive;
+color: white;
 }
 
 img{
@@ -9,7 +13,14 @@ img{
 }
 
 body{
-  font-size: 50px;
-  background: pink;
+ font-size: 50px;
+ background: #FF6699;
+ font-family: 'Poiret One', cursive;
+  padding: 50px;
   
+}
+
+img{
+ background: lavender;
+  padding: 1.5em;
 }
