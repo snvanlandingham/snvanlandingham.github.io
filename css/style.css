@@ -6,6 +6,7 @@ text-align: center;
 font-family: 'Poiret One', cursive;
 color: white;
   font-size: 100px;
+  padding: 30px;
 }
 img{
  display: block;
@@ -26,13 +27,15 @@ body{
 /* menu nav bars */
 nav{
   text-align: center;
+ 
 }
-li{
+
+.linav{
   background: white;
-  letter-spacing: 3px;
+  letter-spacing: .25em;
   font-weight: 200;
   text-align: center;
-  padding: 3px;
+  padding: .25em;
   margin-top: 2em;
   list-style-type: none;
   display: inline-block;
@@ -42,7 +45,7 @@ li a {
 display: block;
 color: black;
 text-align: center;  
-padding: 10px;
+padding: .25em;
 text-decoration: none;
 }
 li a:hover {
@@ -64,7 +67,6 @@ img{
   display: block;
   height: 400px;
  margin: 0 auto;
-background: #ff99a8;
 padding: 1em;
 }
 
@@ -73,13 +75,7 @@ text-align: center;
 font-style: Bold;
 margin: 0 5em 0 5em;
 }
-header {
-color: white;
-background:  #ff99a8;
-font-weight: 700;
-  margin: 30px;
-  text-align: center;
-}
+
 
 h2 {
   color: white;
@@ -90,11 +86,12 @@ h2 {
   line-height: 40px;
   margin-top: 20px;
   font-size: 1.5em;
+  text-align: center;
  
 }
 .rule {
   box-sizing: border-box;
-  height: .1px;
+  height: .075px;
   background: #ff99a8;
 }
 .item h4{
@@ -118,6 +115,11 @@ h5 {
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
+
+.dot {
+  list-style-type: none;
+}
+
 li{
   color: #484848;
 }
@@ -136,16 +138,68 @@ footer h4 {
      text-align: center;
 }
 
-/*  contact page  */
-.contact  {
- font-size: 100px;
- text-align: center;
- margin: 0 auto;
+
+/* Portfolio */
+
+.Portfolio{
+font-size: 100px;
+  text-align: center;
+  background: #979797;
+  color: white;
+  padding: 40px;
+  }
+
+figure{
+  background: none;
+  width: 300px;
+  position: relative;
+  opacity: hidden;
+  margin: 0 auto;
+
 }
-.email{
- font-size: 50px;
+
+figcaption {
+  background: #FF99a8;
+  color: white;
+  width: 300px;
+  position: absolute;
+  bottom: 0;
+  display: none;
+  margin-left: 35px
+
 }
-  
+/* last frame */
+figure:hover figcaption{
+  opacity: 1;
+  bottom: 0;
+  display: inline;
+  text-align: center;
+}
+.wheel{
+  width: 300px;
+  margin-top: 50px;
+
+}
+.ocean{
+  width: 300px;
+  margin-top: 50px;
+
+  }
+.rocks{
+  width: 300px;
+  margin-top: 50px;
+}
+
+.tent{
+  width: 300px;
+  margin-top: 50px;
+}
+
+.last{
+  width: 300px;
+  margin-top: 50px;
+}
+
 /* keyframe animation*/
 @keyframes .animation {
   0% { 
@@ -158,8 +212,12 @@ footer h4 {
    color: white;
   }}
 
-@media (min-width: 645px) {
+@media (max-width: 1000px) {
   body, h1, h2, h3, h4 {
+    font-size: 2em;
+  }
+  .name{
+    font-size: 5em;
   }
   header {
     padding: 30px;
@@ -169,23 +227,64 @@ footer h4 {
   .container {
     width: 90%;
     margin: 0 auto;
+    font-size: 80px;
 } 
-
-h4{
-text-align: center;
-animation: Bigtosmall 4s forwards ease-in;
-font-size: 100px;
-}
 
 img{
 height: 75%;
 width: 25%;
 display: block;
 background: none;
-}
+ text-align: center;
 
+  
+}
+  .linav{
+    font-size: .7em;
+  }
+  
   }
  
-  
-  
-  
+/* contact page  */
+
+  label, 
+input{
+  display: block;
+  margin: 0 auto;
+  font-size: 1em;
+  margin-left:em;
+  padding: 2px;
+  color: white;
+font-size: 50px;
+  color: black;
+}
+
+input[type="text"]{
+    padding: 10px 40px; 
+    background: #FF99a8;
+    width: 350px;
+    border-radius: 3px;
+ color: black;
+}
+
+input[type="email"]{
+    padding: 10px 40px; 
+    background: #FF99a8;
+    width: 350px;
+    border-radius: 1px;
+  font-size: 50px;
+  color: black;
+}
+input[type="message"]{
+  background: #FF99a8;
+  height: 200px;
+  width: 500px;
+  color: black;
+}
+  .contact  {
+ font-size: 100px;
+ text-align: center;
+ margin: 0 auto;
+    color: black;
+
+}   
